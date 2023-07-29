@@ -1,6 +1,6 @@
 # Travel Advisor App - Your Personal Travel Guide
 
-![Travel Advisor App](travel_advisor_app.png)
+![Travel Advisor App](travel_advisor_app1.png)
 
 ## Introduction
 
