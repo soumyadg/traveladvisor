@@ -85,5 +85,4 @@ Happy traveling! ✈️🌍🗺️
 
 Please note that the above readme file is a basic template for your Travel Advisor App. You may need to modify it to match your specific project's structure, add installation instructions for Langchain, and implement the functionality as per your requirements. Additionally, ensure you comply with OpenAI's terms of service while using their API.
 
-* **Sneak Peak:** 
 ![Travel Advisor App](2.png)
