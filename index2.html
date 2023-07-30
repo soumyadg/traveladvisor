@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure the content is centered vertically */
+            overflow: hidden;
+            background-image: url("https://wallpaperaccess.com/full/753391.jpg"); /* Add the correct absolute path to the background image */
+            background-size: cover;
+        }
+
+        .form-container {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 1.5s ease, transform 1.5s ease;
+            width: 80%; /* Increase the width of the form (you can adjust the percentage as needed) */
+            max-width: 600px; /* Limit the maximum width of the form */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc; /* Add border */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 96%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #error-message {
+            color: #FF0000;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        /* Add the CSS for the loading GIF */
+        .loading-gif {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+    <script>
+        function showLoadingGIF() {
+            // This function will be called when the form is submitted
+            // Show the loading GIF and hide the form
+            document.getElementById("planner-form").style.display = "none";
+            document.getElementById("loading-gif").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Add the loading GIF element -->
+    <div id="loading-gif" class="loading-gif">
+        <!-- Replace 'loading.gif' with the path to your actual loading GIF -->
+        <img src="https://miro.medium.com/v2/resize:fit:1100/1*CsJ05WEGfunYMLGfsT2sXA.gif" alt="  Hold on while AI plans the best trip for you...">
+    </div>
+
+    <!-- The existing form container and form elements -->
+    <div class="form-container" id="planner-form">
+        <h2>AI Travel Planner</h2>
+        <form action="/submit" method="post" onsubmit="showLoadingGIF();">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination">
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount">
+
+            <label for="number_of_days">Number of Days:</label>
+            <input type="text" id="number_of_days" name="number_of_days">
+
+            <input type="submit" value="Let's Go!!">
+        </form>
+    </div>
+</body>
+
+</html>

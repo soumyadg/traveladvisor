@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Voilà! Let's go✈️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("https://wallpaperaccess.com/full/701809.jpg"); /* Add the path to your background picture here */
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with opacity */
+            backdrop-filter: blur(5px); /* Add a blur effect to the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .result {
+            font-size: 18px;
+            margin: 0;
+            padding: 20px;
+            background-color: rgba(245, 245, 245, 0.9); /* Set the background color with opacity */
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+            width: 100%;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Your Trip Details</h2>
+        <div class="result">
+            {{ result }}
+        </div>
+        <div class="footer">
+            Powered by <a href="http://www.aitripwise.com" target="_blank">www.aitripwise.com</a>
+        </div>
+    </div>
+</body>
+
+</html>
