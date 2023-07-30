@@ -88,6 +88,3 @@ Please note that the above readme file is a basic template for your Travel Advis
 
 
 ![Travel Advisor App](2.png)
-
-
-![Travel Advisor App](4.png)
