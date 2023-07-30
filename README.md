@@ -1,11 +1,11 @@
 # Travel Advisor App - Your Personal Travel Guide
-www.aitripwise.com
+Visit us at www.aitripwise.com
 
 ![Travel Advisor App](travel_advisor_app1.png)
 
 ## Introduction
 
-Welcome to the Travel Advisor App! This Python application powered by Langchain and OpenAI aims to make your travel planning experience seamless and enjoyable. With this app, you can effortlessly plan your trip itinerary and find the best food recommendations based on your budget and location.Visit us at www.aitripwise.com
+Welcome to the Travel Advisor App! This Python application powered by Langchain and OpenAI aims to make your travel planning experience seamless and enjoyable. With this app, you can effortlessly plan your trip itinerary and find the best food recommendations based on your budget and location.
 
 ## Features
 
