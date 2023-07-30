@@ -9,7 +9,7 @@ from langchain.schema import AIMessage, HumanMessage, SystemMessage
 from langchain.chat_models import ChatOpenAI
 
 # Set your OpenAI API key here
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 'key'
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 app = Flask(__name__)
