@@ -1,6 +1,6 @@
 # Travel Advisor App - Your Personal Travel Guide
 Visit us at www.aitripwise.com
-
+![Travel Advisor App](banner2.png)
 ![Travel Advisor App](travel_advisor_app1.png)
 
 ## Introduction
